@@ -1,0 +1,4 @@
+npm create vite@latest sales-management
+cd sales-management
+npm install
+npm run dev
