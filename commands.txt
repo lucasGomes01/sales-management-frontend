@@ -2,3 +2,8 @@ npm create vite@latest sales-management
 cd sales-management
 npm install
 npm run dev
+
+npm install @auth0/auth0-react
+
+npm install react-router-dom
+npm install tailwindcss @tailwindcss/vite
