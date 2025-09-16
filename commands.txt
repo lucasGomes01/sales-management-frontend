@@ -4,6 +4,9 @@ npm install
 npm run dev
 
 npm install @auth0/auth0-react
-
 npm install react-router-dom
 npm install tailwindcss @tailwindcss/vite
+npm install @mui/material @mui/icons-material @emotion/react @emotion/styled
+npm install @mui/x-data-grid
+npm install --save ag-grid-community ag-grid-react
+

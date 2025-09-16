@@ -11,7 +11,15 @@
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.4.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.2",
+    "@mui/material": "^7.3.2",
+    "@mui/x-data-grid": "^8.11.2",
     "@tailwindcss/vite": "^4.1.13",
+    "ag-grid-community": "^34.2.0",
+    "ag-grid-enterprise": "^34.2.0",
+    "ag-grid-react": "^34.2.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.1"

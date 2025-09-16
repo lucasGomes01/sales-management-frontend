@@ -1,8 +1,10 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
     const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
+    const navigate = useNavigate();
 
     return (
         <div className="min-h-screen bg-gray-50">
@@ -20,7 +22,13 @@ export default function Home() {
                             </button>
                         ) : (
                             <div className="flex items-center gap-4">
-                                <span className="text-gray-600">Welcome, {user.name}</span>
+                                <span className="text-gray-600" >Welcome, {user.name}</span>
+                                <button
+                                    onClick={() => navigate("/dashboard")}
+                                    className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
+                                >
+                                    Go to Dashboard
+                                </button>
                                 <button
                                     onClick={() =>
                                         logout({ returnTo: window.location.origin })
